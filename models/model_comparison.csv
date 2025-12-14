@@ -1,0 +1,9 @@
+Model,Test Accuracy,CV Mean,CV Std
+Naive Bayes,1.0,1.0,0.0
+Logistic Regression,1.0,1.0,0.0
+K-Nearest Neighbors,1.0,1.0,0.0
+Random Forest,1.0,1.0,0.0
+Extra Trees,1.0,1.0,0.0
+Gradient Boosting,1.0,0.9994917407878019,0.0010165184243964287
+XGBoost,1.0,0.9994917407878019,0.0010165184243964287
+LightGBM,1.0,0.9994917407878019,0.0010165184243964287

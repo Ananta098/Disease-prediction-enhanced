@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Disease Predictor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fadeIn {
+        animation: fadeIn 0.3s ease-in-out;
+      }
+      .gradient-bg {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      }
+    </style>
+  </head>
+  <body
+    class="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50"
+  >
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div class="flex items-center space-x-3">
+          <svg
+            class="w-8 h-8 text-blue-600"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+            ></path>
+          </svg>
+          <div>
+            <h1 class="text-3xl font-bold text-gray-900">
+              AI Disease Predictor
+            </h1>
+            <p class="text-sm text-gray-500 mt-1">
+              Advanced symptom analysis powered by machine learning
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <!-- Disclaimer -->
+      <div
+        class="mb-8 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-r-lg"
+      >
+        <div class="flex items-start">
+          <svg
+            class="w-5 h-5 text-yellow-600 mt-0.5 mr-3 flex-shrink-0"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+            ></path>
+          </svg>
+          <div>
+            <h3 class="text-sm font-semibold text-yellow-800">
+              Medical Disclaimer
+            </h3>
+            <p class="text-sm text-yellow-700 mt-1">
+              This tool is for informational purposes only and is not a
+              substitute for professional medical advice. Always consult a
+              qualified healthcare provider for medical concerns.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Left Column - Input -->
+        <div class="space-y-6">
+          <div
+            class="bg-white rounded-2xl shadow-lg p-6 border border-gray-100"
+          >
+            <h2
+              class="text-xl font-semibold text-gray-900 mb-4 flex items-center"
+            >
+              <svg
+                class="w-5 h-5 mr-2 text-blue-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                ></path>
+              </svg>
+              Enter Your Symptoms
+            </h2>
+
+            <div id="symptom-inputs" class="space-y-3">
+              <div class="symptom-input-group flex items-center space-x-2">
+                <input
+                  type="text"
+                  class="symptom-input flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+                  placeholder="Symptom 1 (e.g., fever, headache, cough)"
+                />
+              </div>
+            </div>
+
+            <button
+              id="add-symptom-btn"
+              class="mt-3 w-full py-2 px-4 border-2 border-dashed border-gray-300 rounded-lg text-gray-600 hover:border-blue-400 hover:text-blue-600 transition flex items-center justify-center"
+            >
+              <svg
+                class="w-4 h-4 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 4v16m8-8H4"
+                ></path>
+              </svg>
+              Add Another Symptom
+            </button>
+
+            <div class="mt-6 flex space-x-3">
+              <button
+                id="diagnose-btn"
+                class="flex-1 bg-gradient-to-r from-blue-600 to-blue-700 text-white py-3 px-6 rounded-lg font-semibold hover:from-blue-700 hover:to-blue-800 transition shadow-lg shadow-blue-500/30"
+              >
+                Diagnose
+              </button>
+              <button
+                id="reset-btn"
+                class="px-6 py-3 border-2 border-gray-300 text-gray-700 rounded-lg font-semibold hover:bg-gray-50 transition"
+              >
+                Reset
+              </button>
+            </div>
+          </div>
+
+          <!-- Matched Symptoms -->
+          <div
+            id="matched-symptoms-container"
+            class="hidden bg-green-50 rounded-2xl shadow-lg p-6 border border-green-200 animate-fadeIn"
+          >
+            <h3
+              class="text-lg font-semibold text-green-900 mb-3 flex items-center"
+            >
+              <svg
+                class="w-5 h-5 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+              Matched Symptoms
+            </h3>
+            <div id="matched-symptoms-list" class="space-y-2"></div>
+          </div>
+
+          <!-- Error Message -->
+          <div
+            id="error-container"
+            class="hidden bg-red-50 border-l-4 border-red-400 p-4 rounded-r-lg animate-fadeIn"
+          >
+            <div class="flex items-start">
+              <svg
+                class="w-5 h-5 text-red-600 mt-0.5 mr-3"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+              <div>
+                <h3 class="text-sm font-semibold text-red-800">Error</h3>
+                <p id="error-message" class="text-sm text-red-700 mt-1"></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Loading Indicator -->
+          <div id="loading-container" class="hidden">
+            <div
+              class="bg-white rounded-2xl shadow-lg p-12 border border-gray-100"
+            >
+              <div class="flex flex-col items-center justify-center">
+                <svg
+                  class="animate-spin h-12 w-12 text-blue-600 mb-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <circle
+                    class="opacity-25"
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="currentColor"
+                    stroke-width="4"
+                  ></circle>
+                  <path
+                    class="opacity-75"
+                    fill="currentColor"
+                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                  ></path>
+                </svg>
+                <p class="text-gray-600 font-semibold">
+                  Analyzing your symptoms...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column - Results -->
+        <div class="space-y-6">
+          <div id="results-container">
+            <!-- Empty State -->
+            <div
+              id="empty-state"
+              class="bg-white rounded-2xl shadow-lg p-12 border border-gray-100 text-center"
+            >
+              <div class="max-w-md mx-auto">
+                <svg
+                  class="w-16 h-16 text-gray-300 mx-auto mb-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                  ></path>
+                </svg>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                  No Results Yet
+                </h3>
+                <p class="text-gray-600">
+                  Enter your symptoms and click "Diagnose" to get AI-powered
+                  predictions
+                </p>
+              </div>
+            </div>
+
+            <!-- Predictions Container -->
+            <div id="predictions-container" class="hidden animate-fadeIn"></div>
+
+            <!-- Disease Details Container -->
+            <div
+              id="disease-details-container"
+              class="hidden animate-fadeIn"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="mt-12 text-center text-sm text-gray-500">
+        <p>
+          This system uses machine learning for educational purposes only.
+          <br />
+          <strong
+            >Always consult healthcare professionals for medical advice.</strong
+          >
+        </p>
+      </footer>
+    </main>
+
+    <script>
+      let symptomCount = 1;
+      let currentPredictions = null;
+
+      // Add symptom input field
+      document
+        .getElementById("add-symptom-btn")
+        .addEventListener("click", function () {
+          symptomCount++;
+          const container = document.getElementById("symptom-inputs");
+          const newInput = document.createElement("div");
+          newInput.className =
+            "symptom-input-group flex items-center space-x-2 animate-fadeIn";
+          newInput.innerHTML = `
+                <input
+                    type="text"
+                    class="symptom-input flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+                    placeholder="Symptom ${symptomCount} (e.g., nausea, fatigue, dizziness)"
+                />
+                <button
+                    class="remove-symptom-btn p-2 text-red-500 hover:bg-red-50 rounded-lg transition"
+                    onclick="this.parentElement.remove()"
+                >
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            `;
+          container.appendChild(newInput);
+        });
+
+      // Diagnose button handler
+      document
+        .getElementById("diagnose-btn")
+        .addEventListener("click", async function () {
+          // Get all symptoms
+          const symptomInputs = document.querySelectorAll(".symptom-input");
+          const symptoms = Array.from(symptomInputs)
+            .map((input) => input.value.trim())
+            .filter((symptom) => symptom !== "");
+
+          // Validate
+          if (symptoms.length === 0) {
+            showError("Please enter at least one symptom");
+            return;
+          }
+
+          // Hide previous results and errors
+          hideError();
+          hideResults();
+          showLoading();
+
+          try {
+            const response = await fetch("/predict", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({ symptoms: symptoms }),
+            });
+
+            const data = await response.json();
+
+            hideLoading();
+
+            if (response.ok) {
+              currentPredictions = data.predictions;
+              displayResults(data.predictions, data.matched_symptoms);
+            } else {
+              showError(data.error || "Failed to get predictions");
+            }
+          } catch (error) {
+            hideLoading();
+            showError("Network error. Please check if the server is running.");
+          }
+        });
+
+      // Reset button handler
+      document
+        .getElementById("reset-btn")
+        .addEventListener("click", function () {
+          // Clear inputs
+          const container = document.getElementById("symptom-inputs");
+          container.innerHTML = `
+                <div class="symptom-input-group flex items-center space-x-2">
+                    <input
+                        type="text"
+                        class="symptom-input flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+                        placeholder="Symptom 1 (e.g., fever, headache, cough)"
+                    />
+                </div>
+            `;
+          symptomCount = 1;
+
+          // Hide all results
+          hideResults();
+          hideError();
+          document.getElementById("empty-state").classList.remove("hidden");
+        });
+
+      // Display results
+      function displayResults(predictions, matchedSymptoms) {
+        // Show matched symptoms
+        if (matchedSymptoms && matchedSymptoms.length > 0) {
+          const matchedContainer = document.getElementById(
+            "matched-symptoms-container"
+          );
+          const matchedList = document.getElementById("matched-symptoms-list");
+
+          matchedList.innerHTML = matchedSymptoms
+            .map(
+              (match) => `
+                    <div class="flex items-center justify-between bg-white p-3 rounded-lg">
+                        <span class="text-gray-700">${match.symptom}</span>
+                        <span class="text-sm font-semibold text-green-600">
+                            ${match.confidence.toFixed(1)}% match
+                        </span>
+                    </div>
+                `
+            )
+            .join("");
+
+          matchedContainer.classList.remove("hidden");
+        }
+
+        // Show predictions
+        document.getElementById("empty-state").classList.add("hidden");
+        const predictionsContainer = document.getElementById(
+          "predictions-container"
+        );
+
+        predictionsContainer.innerHTML = `
+                <div class="bg-white rounded-2xl shadow-lg p-6 border border-gray-100">
+                    <h2 class="text-xl font-semibold text-gray-900 mb-4">Possible Diagnoses</h2>
+                    <div class="space-y-3">
+                        ${predictions
+                          .map(
+                            (pred, index) => `
+                            <button
+                                onclick="showDiseaseDetails(${index})"
+                                class="prediction-btn w-full text-left p-4 rounded-xl border-2 border-gray-200 hover:border-blue-300 hover:bg-gray-50 transition"
+                            >
+                                <div class="flex items-center justify-between">
+                                    <div class="flex-1">
+                                        <h3 class="font-semibold text-gray-900 text-lg">${
+                                          pred.disease
+                                        }</h3>
+                                        <div class="mt-2">
+                                            <div class="flex items-center justify-between text-sm mb-1">
+                                                <span class="text-gray-600">Confidence</span>
+                                                <span class="font-semibold text-blue-600">
+                                                    ${(
+                                                      pred.probability * 100
+                                                    ).toFixed(1)}%
+                                                </span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                                <div
+                                                    class="bg-gradient-to-r from-blue-500 to-blue-600 h-2 rounded-full transition-all duration-500"
+                                                    style="width: ${
+                                                      pred.probability * 100
+                                                    }%"
+                                                ></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    ${
+                                      index === 0
+                                        ? `
+                                        <div class="ml-4">
+                                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full">
+                                                Most Likely
+                                            </span>
+                                        </div>
+                                    `
+                                        : ""
+                                    }
+                                </div>
+                            </button>
+                        `
+                          )
+                          .join("")}
+                    </div>
+                </div>
+            `;
+
+        predictionsContainer.classList.remove("hidden");
+
+        // Automatically show first disease details
+        if (predictions.length > 0) {
+          showDiseaseDetails(0);
+        }
+      }
+
+      // Show disease details
+      function showDiseaseDetails(index) {
+        const disease = currentPredictions[index];
+        const detailsContainer = document.getElementById(
+          "disease-details-container"
+        );
+
+        let html = `
+                <div class="bg-white rounded-2xl shadow-lg p-6 border border-gray-100">
+                    <h2 class="text-xl font-semibold text-gray-900 mb-4">About ${disease.disease}</h2>
+            `;
+
+        // Description
+        if (disease.description) {
+          html += `
+                    <div class="mb-6">
+                        <div class="flex items-start">
+                            <svg class="w-5 h-5 text-blue-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-2">Description</h3>
+                                <p class="text-gray-700 text-sm leading-relaxed">${disease.description}</p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+        }
+
+        // Precautions
+        if (disease.precautions && disease.precautions.length > 0) {
+          html += `
+                    <div class="mb-6">
+                        <div class="flex items-start">
+                            <svg class="w-5 h-5 text-orange-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                            </svg>
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-900 mb-2">Precautions</h3>
+                                <ul class="space-y-2">
+                                    ${disease.precautions
+                                      .map(
+                                        (p) => `
+                                        <li class="text-sm text-gray-700 flex items-start">
+                                            <span class="text-orange-500 mr-2">•</span>
+                                            <span>${p}</span>
+                                        </li>
+                                    `
+                                      )
+                                      .join("")}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                `;
+        }
+
+        // Medications
+        if (disease.medications && disease.medications.length > 0) {
+          html += `
+                    <div class="mb-6">
+                        <div class="flex items-start">
+                            <svg class="w-5 h-5 text-purple-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                            </svg>
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-900 mb-2">Common Medications</h3>
+                                <div class="flex flex-wrap gap-2">
+                                    ${disease.medications
+                                      .map(
+                                        (m) => `
+                                        <span class="bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full">${m}</span>
+                                    `
+                                      )
+                                      .join("")}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+        }
+
+        // Diet
+        if (disease.diet && disease.diet.length > 0) {
+          html += `
+                    <div class="mb-6">
+                        <div class="flex items-start">
+                            <svg class="w-5 h-5 text-green-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-900 mb-2">Dietary Recommendations</h3>
+                                <ul class="space-y-2">
+                                    ${disease.diet
+                                      .map(
+                                        (d) => `
+                                        <li class="text-sm text-gray-700 flex items-start">
+                                            <span class="text-green-500 mr-2">•</span>
+                                            <span>${d}</span>
+                                        </li>
+                                    `
+                                      )
+                                      .join("")}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                `;
+        }
+
+        // Workout
+        if (disease.workout && disease.workout.length > 0) {
+          html += `
+                    <div>
+                        <div class="flex items-start">
+                            <svg class="w-5 h-5 text-blue-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-900 mb-2">Exercise Recommendations</h3>
+                                <ul class="space-y-2">
+                                    ${disease.workout
+                                      .map(
+                                        (w) => `
+                                        <li class="text-sm text-gray-700 flex items-start">
+                                            <span class="text-blue-500 mr-2">•</span>
+                                            <span>${w}</span>
+                                        </li>
+                                    `
+                                      )
+                                      .join("")}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                `;
+        }
+
+        html += `</div>`;
+
+        detailsContainer.innerHTML = html;
+        detailsContainer.classList.remove("hidden");
+      }
+
+      // Utility functions
+      function showError(message) {
+        document.getElementById("error-message").textContent = message;
+        document.getElementById("error-container").classList.remove("hidden");
+      }
+
+      function hideError() {
+        document.getElementById("error-container").classList.add("hidden");
+      }
+
+      function showLoading() {
+        document.getElementById("loading-container").classList.remove("hidden");
+      }
+
+      function hideLoading() {
+        document.getElementById("loading-container").classList.add("hidden");
+      }
+
+      function hideResults() {
+        document
+          .getElementById("matched-symptoms-container")
+          .classList.add("hidden");
+        document
+          .getElementById("predictions-container")
+          .classList.add("hidden");
+        document
+          .getElementById("disease-details-container")
+          .classList.add("hidden");
+      }
+    </script>
+  </body>
+</html>

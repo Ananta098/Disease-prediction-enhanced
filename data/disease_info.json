@@ -1,0 +1,1109 @@
+{
+  "Fungal infection": {
+    "description": "A fungal infection occurs when an invasive fungus takes over an area of the body and is too much for the immune system to handle. Common types include athlete's foot, ringworm, and yeast infections.",
+    "precautions": [
+      "Keep the affected area clean and dry",
+      "Avoid sharing personal items like towels",
+      "Wear breathable fabrics",
+      "Practice good hygiene"
+    ],
+    "medications": [
+      "Antifungal creams (Clotrimazole)",
+      "Fluconazole",
+      "Terbinafine",
+      "Ketoconazole"
+    ],
+    "workout": [
+      "Light exercise is okay",
+      "Avoid excessive sweating in affected areas",
+      "Shower immediately after workout",
+      "Wear clean, dry workout clothes"
+    ],
+    "diet": [
+      "Reduce sugar intake",
+      "Eat probiotic-rich foods (yogurt)",
+      "Include garlic in diet",
+      "Increase vitamin C intake"
+    ]
+  },
+  "Allergy": {
+    "description": "An allergy is an immune system response to a foreign substance that's not typically harmful to your body. These can include pollen, pet dander, certain foods, or insect stings.",
+    "precautions": [
+      "Identify and avoid allergens",
+      "Keep windows closed during high pollen counts",
+      "Use air purifiers",
+      "Wash hands and face frequently"
+    ],
+    "medications": [
+      "Antihistamines (Cetirizine, Loratadine)",
+      "Nasal corticosteroids",
+      "Decongestants",
+      "EpiPen (for severe allergies)"
+    ],
+    "workout": [
+      "Exercise indoors during high pollen season",
+      "Avoid outdoor exercise in early morning",
+      "Breathe through nose while exercising",
+      "Stay hydrated"
+    ],
+    "diet": [
+      "Avoid known food allergens",
+      "Eat anti-inflammatory foods",
+      "Include omega-3 rich foods",
+      "Drink plenty of water"
+    ]
+  },
+  "Common Cold": {
+    "description": "The common cold is a viral infection of your nose and throat (upper respiratory tract). It's usually harmless and symptoms typically resolve within 7-10 days.",
+    "precautions": [
+      "Rest and stay home",
+      "Drink plenty of fluids",
+      "Wash hands frequently",
+      "Cover mouth when coughing or sneezing"
+    ],
+    "medications": [
+      "Pain relievers (Acetaminophen, Ibuprofen)",
+      "Decongestants",
+      "Cough suppressants",
+      "Throat lozenges"
+    ],
+    "workout": [
+      "Rest during acute phase",
+      "Light walking when feeling better",
+      "Avoid intense exercise",
+      "Return to normal activity gradually"
+    ],
+    "diet": [
+      "Chicken soup",
+      "Warm fluids and tea",
+      "Citrus fruits for vitamin C",
+      "Honey for sore throat"
+    ]
+  },
+  "Pneumonia": {
+    "description": "Pneumonia is an infection that inflames the air sacs in one or both lungs. The air sacs may fill with fluid or pus, causing cough with phlegm, fever, chills, and difficulty breathing.",
+    "precautions": [
+      "Get vaccinated",
+      "Practice good hygiene",
+      "Don't smoke",
+      "Keep immune system strong"
+    ],
+    "medications": [
+      "Antibiotics (for bacterial pneumonia)",
+      "Fever reducers",
+      "Cough medicine",
+      "Pain relievers"
+    ],
+    "workout": [
+      "Complete rest during illness",
+      "Gradual return to activity",
+      "Breathing exercises",
+      "Short walks as condition improves"
+    ],
+    "diet": [
+      "High-protein foods",
+      "Plenty of fluids",
+      "Fruits and vegetables",
+      "Whole grains"
+    ]
+  },
+  "Dimorphic hemmorhoids(piles)": {
+    "description": "Hemorrhoids are swollen veins in the lowest part of your rectum and anus. Sometimes the walls of these blood vessels stretch so thin that the veins bulge and get irritated.",
+    "precautions": [
+      "Avoid straining during bowel movements",
+      "Don't sit for long periods",
+      "Practice good hygiene",
+      "Use soft, unscented toilet paper"
+    ],
+    "medications": [
+      "Over-the-counter hemorrhoid cream",
+      "Pain relievers",
+      "Stool softeners",
+      "Witch hazel pads"
+    ],
+    "workout": [
+      "Regular physical activity",
+      "Avoid heavy lifting",
+      "Kegel exercises",
+      "Walking and swimming"
+    ],
+    "diet": [
+      "High-fiber foods",
+      "Plenty of water",
+      "Whole grains",
+      "Fruits and vegetables"
+    ]
+  },
+  "Heart attack": {
+    "description": "A heart attack occurs when blood flow to a part of the heart is blocked, usually by a blood clot. This can damage or destroy part of the heart muscle.",
+    "precautions": [
+      "Know the warning signs",
+      "Call emergency services immediately",
+      "Take aspirin if advised",
+      "Stay calm and rest"
+    ],
+    "medications": [
+      "Aspirin",
+      "Nitroglycerin",
+      "Beta blockers",
+      "ACE inhibitors"
+    ],
+    "workout": [
+      "Cardiac rehabilitation program",
+      "Gradual increase in activity",
+      "Walking program",
+      "Supervised exercise"
+    ],
+    "diet": [
+      "Heart-healthy diet",
+      "Low sodium",
+      "Lean proteins",
+      "Plenty of vegetables"
+    ]
+  },
+  "Varicose veins": {
+    "description": "Varicose veins are enlarged, twisted veins that commonly appear in the legs and feet. They occur when vein valves become weak or damaged.",
+    "precautions": [
+      "Elevate legs when resting",
+      "Avoid prolonged standing or sitting",
+      "Wear compression stockings",
+      "Maintain healthy weight"
+    ],
+    "medications": [
+      "Pain relievers",
+      "Anti-inflammatory drugs",
+      "Compression therapy",
+      "Sclerotherapy (medical procedure)"
+    ],
+    "workout": [
+      "Walking",
+      "Cycling",
+      "Swimming",
+      "Leg exercises"
+    ],
+    "diet": [
+      "High-fiber foods",
+      "Foods rich in flavonoids",
+      "Adequate hydration",
+      "Low-salt diet"
+    ]
+  },
+  "Hypothyroidism": {
+    "description": "Hypothyroidism is a condition in which your thyroid gland doesn't produce enough thyroid hormones. This can slow down your metabolism and cause various symptoms.",
+    "precautions": [
+      "Take medication as prescribed",
+      "Regular thyroid function tests",
+      "Maintain consistent medication schedule",
+      "Monitor symptoms"
+    ],
+    "medications": [
+      "Levothyroxine",
+      "Thyroid hormone replacement",
+      "Take on empty stomach",
+      "Avoid certain supplements near medication time"
+    ],
+    "workout": [
+      "Regular moderate exercise",
+      "Walking, swimming, yoga",
+      "Start slowly and increase gradually",
+      "Consistency is key"
+    ],
+    "diet": [
+      "Iodine-rich foods",
+      "Selenium-rich foods",
+      "Avoid excessive soy",
+      "Balanced, nutritious diet"
+    ]
+  },
+  "Hyperthyroidism": {
+    "description": "Hyperthyroidism occurs when your thyroid gland produces too much thyroid hormone. This can accelerate your body's metabolism, causing unintentional weight loss and rapid heartbeat.",
+    "precautions": [
+      "Take medications as prescribed",
+      "Regular monitoring",
+      "Avoid excessive iodine",
+      "Manage stress"
+    ],
+    "medications": [
+      "Anti-thyroid medications",
+      "Beta blockers",
+      "Radioactive iodine",
+      "Methimazole"
+    ],
+    "workout": [
+      "Moderate exercise",
+      "Avoid overexertion",
+      "Yoga and stretching",
+      "Monitor heart rate"
+    ],
+    "diet": [
+      "Low-iodine diet if recommended",
+      "Adequate calcium intake",
+      "Avoid caffeine",
+      "Eat regular, balanced meals"
+    ]
+  },
+  "Hypoglycemia": {
+    "description": "Hypoglycemia is a condition in which your blood sugar (glucose) level is lower than normal. Glucose is your body's main energy source.",
+    "precautions": [
+      "Monitor blood sugar regularly",
+      "Carry glucose tablets or candy",
+      "Eat regular meals",
+      "Wear medical ID bracelet"
+    ],
+    "medications": [
+      "Glucose tablets",
+      "Glucagon injection",
+      "Adjust diabetes medications",
+      "Fast-acting carbohydrates"
+    ],
+    "workout": [
+      "Check blood sugar before exercise",
+      "Carry snacks during workout",
+      "Avoid exercising when sugar is low",
+      "Monitor during and after exercise"
+    ],
+    "diet": [
+      "Frequent small meals",
+      "Complex carbohydrates",
+      "Protein with each meal",
+      "Avoid skipping meals"
+    ]
+  },
+  "Osteoarthristis": {
+    "description": "Osteoarthritis is the most common form of arthritis, affecting millions of people. It occurs when the protective cartilage that cushions the ends of bones wears down over time.",
+    "precautions": [
+      "Maintain healthy weight",
+      "Protect joints from injury",
+      "Use assistive devices if needed",
+      "Apply hot or cold therapy"
+    ],
+    "medications": [
+      "NSAIDs (Ibuprofen, Naproxen)",
+      "Acetaminophen",
+      "Topical pain relievers",
+      "Corticosteroid injections"
+    ],
+    "workout": [
+      "Low-impact exercises",
+      "Swimming and water aerobics",
+      "Stretching exercises",
+      "Strength training"
+    ],
+    "diet": [
+      "Anti-inflammatory foods",
+      "Omega-3 fatty acids",
+      "Fruits and vegetables",
+      "Maintain healthy weight"
+    ]
+  },
+  "Arthritis": {
+    "description": "Arthritis is inflammation of one or more joints, causing pain and stiffness that can worsen with age. The most common types are osteoarthritis and rheumatoid arthritis.",
+    "precautions": [
+      "Stay active",
+      "Maintain healthy weight",
+      "Protect your joints",
+      "Use hot and cold therapy"
+    ],
+    "medications": [
+      "NSAIDs",
+      "Corticosteroids",
+      "DMARDs (for rheumatoid arthritis)",
+      "Biologics"
+    ],
+    "workout": [
+      "Range of motion exercises",
+      "Strengthening exercises",
+      "Aerobic exercise",
+      "Balance activities"
+    ],
+    "diet": [
+      "Mediterranean diet",
+      "Omega-3 rich foods",
+      "Colorful fruits and vegetables",
+      "Avoid processed foods"
+    ]
+  },
+  "(vertigo) Paroymsal  Positional Vertigo": {
+    "description": "BPPV is a disorder arising from a problem in the inner ear. Symptoms include dizziness, a sensation that you or your surroundings are spinning or moving.",
+    "precautions": [
+      "Move slowly when changing positions",
+      "Sit down immediately if dizzy",
+      "Use good lighting",
+      "Remove trip hazards at home"
+    ],
+    "medications": [
+      "Anti-nausea medications",
+      "Antihistamines",
+      "Anticholinergics",
+      "Benzodiazepines (short-term)"
+    ],
+    "workout": [
+      "Vestibular rehabilitation exercises",
+      "Epley maneuver",
+      "Balance exercises",
+      "Avoid sudden head movements"
+    ],
+    "diet": [
+      "Stay hydrated",
+      "Limit salt intake",
+      "Avoid alcohol and caffeine",
+      "Eat regular meals"
+    ]
+  },
+  "Acne": {
+    "description": "Acne is a skin condition that occurs when hair follicles become plugged with oil and dead skin cells. It commonly causes whiteheads, blackheads, or pimples.",
+    "precautions": [
+      "Wash face twice daily",
+      "Don't pick or squeeze pimples",
+      "Use oil-free products",
+      "Avoid touching face"
+    ],
+    "medications": [
+      "Benzoyl peroxide",
+      "Salicylic acid",
+      "Retinoids",
+      "Antibiotics (for severe cases)"
+    ],
+    "workout": [
+      "Shower immediately after exercise",
+      "Use clean towels",
+      "Avoid tight headbands",
+      "Keep hair off face during workout"
+    ],
+    "diet": [
+      "Limit dairy products",
+      "Reduce refined sugars",
+      "Eat antioxidant-rich foods",
+      "Stay hydrated"
+    ]
+  },
+  "Urinary tract infection": {
+    "description": "A urinary tract infection (UTI) is an infection in any part of your urinary system — your kidneys, ureters, bladder, and urethra. Most infections involve the lower urinary tract.",
+    "precautions": [
+      "Drink plenty of water",
+      "Urinate frequently",
+      "Wipe front to back",
+      "Empty bladder after intercourse"
+    ],
+    "medications": [
+      "Antibiotics (Nitrofurantoin, Trimethoprim)",
+      "Pain relievers",
+      "Phenazopyridine for pain",
+      "Complete full antibiotic course"
+    ],
+    "workout": [
+      "Rest during acute infection",
+      "Light activity when feeling better",
+      "Stay hydrated during exercise",
+      "Avoid activities that irritate bladder"
+    ],
+    "diet": [
+      "Drink cranberry juice",
+      "Plenty of water",
+      "Avoid bladder irritants (caffeine, alcohol)",
+      "Vitamin C rich foods"
+    ]
+  },
+  "Psoriasis": {
+    "description": "Psoriasis is a skin disease that causes red, itchy scaly patches, most commonly on the knees, elbows, trunk, and scalp. It's a chronic disease that often comes and goes.",
+    "precautions": [
+      "Keep skin moisturized",
+      "Avoid triggers",
+      "Take lukewarm baths",
+      "Avoid scratching"
+    ],
+    "medications": [
+      "Topical corticosteroids",
+      "Vitamin D analogues",
+      "Retinoids",
+      "Biologics (for severe cases)"
+    ],
+    "workout": [
+      "Regular exercise helps",
+      "Shower after sweating",
+      "Wear breathable clothing",
+      "Swimming in saltwater can help"
+    ],
+    "diet": [
+      "Anti-inflammatory diet",
+      "Omega-3 fatty acids",
+      "Fruits and vegetables",
+      "Avoid alcohol and smoking"
+    ]
+  },
+  "Impetigo": {
+    "description": "Impetigo is a highly contagious skin infection that mainly affects infants and young children. It usually appears as reddish sores on the face, especially around the nose and mouth.",
+    "precautions": [
+      "Keep affected area clean",
+      "Don't share towels or clothing",
+      "Avoid touching the sores",
+      "Wash hands frequently"
+    ],
+    "medications": [
+      "Antibiotic ointment",
+      "Oral antibiotics",
+      "Antiseptic cream",
+      "Complete full treatment course"
+    ],
+    "workout": [
+      "Avoid contact sports until healed",
+      "Keep area covered during activity",
+      "Shower immediately after exercise",
+      "Use clean equipment"
+    ],
+    "diet": [
+      "Balanced, nutritious diet",
+      "Foods rich in vitamin C",
+      "Adequate protein intake",
+      "Stay hydrated"
+    ]
+  },
+  "Dengue": {
+    "description": "Dengue is a mosquito-borne viral disease. Symptoms include high fever, severe headache, pain behind the eyes, joint and muscle pain, rash, and mild bleeding.",
+    "precautions": [
+      "Use mosquito repellent",
+      "Wear protective clothing",
+      "Use mosquito nets",
+      "Eliminate standing water"
+    ],
+    "medications": [
+      "Acetaminophen for fever",
+      "Avoid aspirin and NSAIDs",
+      "IV fluids if needed",
+      "Close medical monitoring"
+    ],
+    "workout": [
+      "Complete rest during illness",
+      "No exercise until fully recovered",
+      "Gradual return to activity",
+      "Listen to your body"
+    ],
+    "diet": [
+      "Plenty of fluids",
+      "Papaya leaf juice",
+      "Light, easily digestible foods",
+      "Vitamin C rich foods"
+    ]
+  },
+  "Typhoid": {
+    "description": "Typhoid fever is a bacterial infection that can lead to high fever, diarrhea, and vomiting. It's caused by Salmonella typhi and spreads through contaminated food or water.",
+    "precautions": [
+      "Get vaccinated",
+      "Drink safe water",
+      "Eat cooked food",
+      "Practice good hand hygiene"
+    ],
+    "medications": [
+      "Antibiotics (Ciprofloxacin, Ceftriaxone)",
+      "Fever reducers",
+      "Complete antibiotic course",
+      "Hospitalization if severe"
+    ],
+    "workout": [
+      "Complete rest during illness",
+      "No exercise for several weeks",
+      "Gradual recovery period",
+      "Medical clearance before resuming"
+    ],
+    "diet": [
+      "High-calorie diet",
+      "Easily digestible foods",
+      "Plenty of fluids",
+      "Frequent small meals"
+    ]
+  },
+  "Hepatitis A": {
+    "description": "Hepatitis A is a highly contagious liver infection caused by the hepatitis A virus. It's usually transmitted through contaminated food or water or close contact with an infected person.",
+    "precautions": [
+      "Get vaccinated",
+      "Practice good hygiene",
+      "Avoid contaminated food/water",
+      "Wash hands frequently"
+    ],
+    "medications": [
+      "No specific treatment",
+      "Rest",
+      "Manage symptoms",
+      "Avoid alcohol"
+    ],
+    "workout": [
+      "Rest during acute phase",
+      "Avoid strenuous activity",
+      "Gradual return to normal",
+      "Listen to your body"
+    ],
+    "diet": [
+      "Small, frequent meals",
+      "Low-fat foods",
+      "Plenty of fluids",
+      "Avoid alcohol completely"
+    ]
+  },
+  "Hepatitis B": {
+    "description": "Hepatitis B is a serious liver infection caused by the hepatitis B virus. It can become chronic and lead to liver failure, liver cancer, or cirrhosis.",
+    "precautions": [
+      "Get vaccinated",
+      "Practice safe sex",
+      "Don't share needles",
+      "Regular medical monitoring"
+    ],
+    "medications": [
+      "Antiviral medications",
+      "Interferon injections",
+      "Liver function monitoring",
+      "Long-term treatment may be needed"
+    ],
+    "workout": [
+      "Regular moderate exercise",
+      "Avoid contact sports if severe",
+      "Stay active but don't overexert",
+      "Maintain healthy lifestyle"
+    ],
+    "diet": [
+      "Liver-friendly diet",
+      "Avoid alcohol completely",
+      "Low-fat, high-fiber foods",
+      "Plenty of fruits and vegetables"
+    ]
+  },
+  "Hepatitis C": {
+    "description": "Hepatitis C is a viral infection that causes liver inflammation. It spreads through contaminated blood and can be acute or chronic.",
+    "precautions": [
+      "Don't share needles or razors",
+      "Practice safe sex",
+      "Regular medical monitoring",
+      "Avoid alcohol"
+    ],
+    "medications": [
+      "Direct-acting antivirals",
+      "Combination therapy",
+      "High cure rate with treatment",
+      "Regular liver function tests"
+    ],
+    "workout": [
+      "Regular exercise recommended",
+      "Helps reduce liver fat",
+      "Moderate intensity activities",
+      "Avoid overexertion when fatigued"
+    ],
+    "diet": [
+      "Balanced, nutritious diet",
+      "Avoid alcohol completely",
+      "Limit sugar and processed foods",
+      "Stay hydrated"
+    ]
+  },
+  "Hepatitis D": {
+    "description": "Hepatitis D is a liver infection caused by the hepatitis D virus. It only occurs in people who are already infected with hepatitis B virus.",
+    "precautions": [
+      "Hepatitis B vaccination prevents it",
+      "Avoid sharing needles",
+      "Practice safe sex",
+      "Regular medical monitoring"
+    ],
+    "medications": [
+      "Pegylated interferon",
+      "Antiviral medications",
+      "Treat hepatitis B",
+      "Long-term monitoring"
+    ],
+    "workout": [
+      "Moderate regular exercise",
+      "Avoid overexertion",
+      "Listen to your body",
+      "Rest when fatigued"
+    ],
+    "diet": [
+      "Liver-healthy diet",
+      "No alcohol",
+      "Low-fat foods",
+      "Adequate nutrition"
+    ]
+  },
+  "Hepatitis E": {
+    "description": "Hepatitis E is a liver infection caused by the hepatitis E virus. It spreads mainly through contaminated drinking water and is common in developing countries.",
+    "precautions": [
+      "Drink safe water",
+      "Practice good hygiene",
+      "Eat cooked food",
+      "Wash hands frequently"
+    ],
+    "medications": [
+      "Usually self-limiting",
+      "Supportive care",
+      "Rest",
+      "Ribavirin in severe cases"
+    ],
+    "workout": [
+      "Rest during acute phase",
+      "Gradual return to activity",
+      "Avoid strenuous exercise",
+      "Full recovery takes time"
+    ],
+    "diet": [
+      "Light, easily digestible foods",
+      "Plenty of fluids",
+      "Avoid alcohol",
+      "Small frequent meals"
+    ]
+  },
+  "Alcoholic hepatitis": {
+    "description": "Alcoholic hepatitis is inflammation of the liver caused by drinking alcohol. It can range from mild to life-threatening.",
+    "precautions": [
+      "Stop drinking alcohol immediately",
+      "Regular medical monitoring",
+      "Avoid liver toxins",
+      "Maintain healthy weight"
+    ],
+    "medications": [
+      "Corticosteroids",
+      "Pentoxifylline",
+      "Nutritional supplements",
+      "Treat complications"
+    ],
+    "workout": [
+      "Light activity as tolerated",
+      "Avoid strenuous exercise initially",
+      "Walking is beneficial",
+      "Gradual increase in activity"
+    ],
+    "diet": [
+      "High-protein diet",
+      "Nutritious foods",
+      "Vitamin supplements",
+      "Absolutely no alcohol"
+    ]
+  },
+  "Tuberculosis": {
+    "description": "Tuberculosis (TB) is a potentially serious infectious disease that mainly affects the lungs. It's caused by bacteria that spread from person to person through tiny droplets.",
+    "precautions": [
+      "Complete full medication course",
+      "Cover mouth when coughing",
+      "Stay home until no longer contagious",
+      "Improve ventilation"
+    ],
+    "medications": [
+      "Isoniazid",
+      "Rifampin",
+      "Ethambutol",
+      "Pyrazinamide (combination therapy)"
+    ],
+    "workout": [
+      "Rest during active treatment",
+      "Breathing exercises",
+      "Gradual return to activity",
+      "Walking as tolerated"
+    ],
+    "diet": [
+      "High-calorie, high-protein diet",
+      "Vitamin supplements",
+      "Plenty of fluids",
+      "Nutritious balanced meals"
+    ]
+  },
+  "Bronchial Asthma": {
+    "description": "Asthma is a condition in which your airways narrow and swell and may produce extra mucus. This can make breathing difficult and trigger coughing, wheezing, and shortness of breath.",
+    "precautions": [
+      "Avoid triggers",
+      "Use medications as prescribed",
+      "Monitor peak flow",
+      "Have action plan ready"
+    ],
+    "medications": [
+      "Quick-relief inhalers",
+      "Long-term control medications",
+      "Corticosteroids",
+      "Bronchodilators"
+    ],
+    "workout": [
+      "Regular exercise with precautions",
+      "Warm up properly",
+      "Use inhaler before exercise",
+      "Swimming is often well-tolerated"
+    ],
+    "diet": [
+      "Anti-inflammatory foods",
+      "Omega-3 fatty acids",
+      "Fruits and vegetables",
+      "Avoid food triggers"
+    ]
+  },
+  "Hypertension": {
+    "description": "High blood pressure (hypertension) is a common condition in which the long-term force of the blood against your artery walls is high enough that it may eventually cause health problems.",
+    "precautions": [
+      "Monitor blood pressure regularly",
+      "Take medications as prescribed",
+      "Reduce stress",
+      "Maintain healthy weight"
+    ],
+    "medications": [
+      "ACE inhibitors",
+      "Beta blockers",
+      "Calcium channel blockers",
+      "Diuretics"
+    ],
+    "workout": [
+      "Regular aerobic exercise",
+      "30 minutes most days",
+      "Walking, swimming, cycling",
+      "Avoid heavy weight lifting"
+    ],
+    "diet": [
+      "DASH diet",
+      "Low sodium",
+      "Fruits and vegetables",
+      "Limit alcohol"
+    ]
+  },
+  "Migraine": {
+    "description": "A migraine is a headache that can cause severe throbbing pain or a pulsing sensation, usually on one side of the head. It's often accompanied by nausea, vomiting, and sensitivity to light and sound.",
+    "precautions": [
+      "Identify and avoid triggers",
+      "Maintain regular sleep schedule",
+      "Manage stress",
+      "Stay hydrated"
+    ],
+    "medications": [
+      "Triptans",
+      "NSAIDs",
+      "Anti-nausea medications",
+      "Preventive medications if frequent"
+    ],
+    "workout": [
+      "Regular exercise helps prevent",
+      "Avoid exercise during attack",
+      "Gradual warm-up important",
+      "Stay hydrated during activity"
+    ],
+    "diet": [
+      "Avoid trigger foods",
+      "Regular meals",
+      "Stay hydrated",
+      "Limit caffeine"
+    ]
+  },
+  "Cervical spondylosis": {
+    "description": "Cervical spondylosis is a general term for age-related wear and tear affecting the spinal disks in your neck. It's a common condition that worsens with age.",
+    "precautions": [
+      "Maintain good posture",
+      "Take frequent breaks from desk work",
+      "Use proper pillow",
+      "Avoid neck strain"
+    ],
+    "medications": [
+      "NSAIDs",
+      "Muscle relaxants",
+      "Pain relievers",
+      "Corticosteroid injections if severe"
+    ],
+    "workout": [
+      "Neck stretching exercises",
+      "Strengthening exercises",
+      "Low-impact aerobics",
+      "Physical therapy"
+    ],
+    "diet": [
+      "Anti-inflammatory foods",
+      "Calcium and vitamin D",
+      "Maintain healthy weight",
+      "Stay hydrated"
+    ]
+  },
+  "Paralysis (brain hemorrhage)": {
+    "description": "Paralysis from brain hemorrhage occurs when bleeding in the brain damages areas that control movement. This is a medical emergency requiring immediate treatment.",
+    "precautions": [
+      "Recognize stroke symptoms (FAST)",
+      "Control blood pressure",
+      "Take prescribed medications",
+      "Regular medical follow-ups"
+    ],
+    "medications": [
+      "Blood pressure medications",
+      "Anticoagulants or antiplatelet drugs",
+      "Medications to control seizures",
+      "Muscle relaxants"
+    ],
+    "workout": [
+      "Physical therapy essential",
+      "Occupational therapy",
+      "Range of motion exercises",
+      "Gradual strengthening program"
+    ],
+    "diet": [
+      "Heart-healthy diet",
+      "Low sodium",
+      "Plenty of fruits and vegetables",
+      "Adequate hydration"
+    ]
+  },
+  "Jaundice": {
+    "description": "Jaundice is a condition in which the skin, whites of the eyes, and mucous membranes turn yellow because of a high level of bilirubin in the blood.",
+    "precautions": [
+      "Avoid alcohol",
+      "Protect liver from toxins",
+      "Regular medical monitoring",
+      "Treat underlying cause"
+    ],
+    "medications": [
+      "Treat underlying condition",
+      "Phototherapy for newborns",
+      "Medications for specific causes",
+      "Liver support if needed"
+    ],
+    "workout": [
+      "Rest during acute phase",
+      "Light activity as tolerated",
+      "Avoid strenuous exercise",
+      "Gradual return to normal"
+    ],
+    "diet": [
+      "Easily digestible foods",
+      "High-fiber diet",
+      "Plenty of fluids",
+      "Avoid fatty foods"
+    ]
+  },
+  "Malaria": {
+    "description": "Malaria is a life-threatening disease caused by parasites that are transmitted through the bites of infected mosquitoes. Symptoms include fever, chills, and flu-like illness.",
+    "precautions": [
+      "Use mosquito repellent",
+      "Sleep under mosquito nets",
+      "Take antimalarial medication if traveling",
+      "Wear protective clothing"
+    ],
+    "medications": [
+      "Antimalarial drugs (Chloroquine, Artemisinin)",
+      "Fever reducers",
+      "IV fluids if needed",
+      "Complete treatment course"
+    ],
+    "workout": [
+      "Complete rest during illness",
+      "No exercise until fully recovered",
+      "Gradual return to activity",
+      "Medical clearance needed"
+    ],
+    "diet": [
+      "Plenty of fluids",
+      "Easily digestible foods",
+      "High-calorie diet",
+      "Small frequent meals"
+    ]
+  },
+  "Chicken pox": {
+    "description": "Chickenpox is a highly contagious infection caused by the varicella-zoster virus. It causes an itchy rash with small, fluid-filled blisters.",
+    "precautions": [
+      "Avoid scratching rash",
+      "Stay home until all blisters have crusted",
+      "Don't share personal items",
+      "Keep fingernails short"
+    ],
+    "medications": [
+      "Antihistamines for itching",
+      "Calamine lotion",
+      "Acetaminophen for fever",
+      "Antiviral medication in severe cases"
+    ],
+    "workout": [
+      "Rest during illness",
+      "No exercise until fully recovered",
+      "Avoid activities that cause sweating",
+      "Return to activity gradually"
+    ],
+    "diet": [
+      "Soft foods if mouth sores present",
+      "Plenty of fluids",
+      "Balanced nutritious diet",
+      "Cold foods may soothe mouth"
+    ]
+  },
+  "Diabetes": {
+    "description": "Diabetes is a chronic condition that affects how your body turns food into energy. With diabetes, your body either doesn't make enough insulin or can't use it as well as it should.",
+"precautions": [
+  "Monitor blood sugar regularly",
+  "Take medications as prescribed",
+  "Check feet daily",
+  "Regular medical check-ups"
+],
+"medications": [
+  "Insulin",
+  "Metformin",
+  "Sulfonylureas",
+  "GLP-1 receptor agonists"
+],
+"workout": [
+  "Regular physical activity",
+  "Check blood sugar before and after",
+  "Carry fast-acting carbs",
+  "30 minutes most days of the week"
+],
+"diet": [
+  "Count carbohydrates",
+  "Choose high-fiber foods",
+  "Eat at regular times",
+  "Limit sugary foods and drinks"
+]
+},
+"Gastroenteritis": {
+"description": "Gastroenteritis is an inflammation of the digestive tract, particularly the stomach and intestines. It typically causes diarrhea, vomiting, and abdominal pain.",
+"precautions": [
+"Wash hands frequently",
+"Avoid contaminated food/water",
+"Stay home when sick",
+"Disinfect surfaces"
+],
+"medications": [
+"Oral rehydration solutions",
+"Anti-diarrheal medications",
+"Antibiotics if bacterial",
+"Anti-nausea medications"
+],
+"workout": [
+"Rest during acute phase",
+"No exercise until symptoms resolve",
+"Rehydrate before resuming",
+"Start slowly"
+],
+"diet": [
+"BRAT diet (Bananas, Rice, Applesauce, Toast)",
+"Clear fluids",
+"Avoid dairy temporarily",
+"Gradually return to normal diet"
+]
+},
+"GERD": {
+"description": "Gastroesophageal reflux disease (GERD) is a chronic condition where stomach acid frequently flows back into the esophagus, irritating its lining.",
+"precautions": [
+"Elevate head of bed",
+"Don't lie down after eating",
+"Avoid tight clothing",
+"Eat smaller meals"
+],
+"medications": [
+"Proton pump inhibitors",
+"H2 blockers",
+"Antacids",
+"Prokinetics"
+],
+"workout": [
+"Wait 2-3 hours after eating",
+"Avoid exercises that increase pressure",
+"Low-impact activities best",
+"Stay upright during exercise"
+],
+"diet": [
+"Avoid trigger foods",
+"No caffeine, alcohol, chocolate",
+"Avoid fatty, spicy foods",
+"Eat smaller, more frequent meals"
+]
+},
+"Chronic cholestasis": {
+"description": "Chronic cholestasis is a condition where bile flow from the liver is reduced or blocked. This can lead to buildup of bile acids and bilirubin in the blood.",
+"precautions": [
+"Avoid alcohol",
+"Regular medical monitoring",
+"Protect liver health",
+"Manage underlying conditions"
+],
+"medications": [
+"Ursodeoxycholic acid",
+"Cholestyramine for itching",
+"Vitamin supplements",
+"Treat underlying cause"
+],
+"workout": [
+"Moderate exercise as tolerated",
+"Fatigue may limit activity",
+"Listen to your body",
+"Rest when needed"
+],
+"diet": [
+"Medium-chain triglycerides",
+"Fat-soluble vitamin supplements",
+"Low-fat diet",
+"Nutritious balanced meals"
+]
+},
+"Drug Reaction": {
+"description": "A drug reaction is an unwanted response to a medication. It can range from mild side effects to severe allergic reactions.",
+"precautions": [
+"Inform doctors of all medications",
+"Wear medical alert bracelet if severe",
+"Know symptoms of reaction",
+"Carry emergency medication if prescribed"
+],
+"medications": [
+"Discontinue offending drug",
+"Antihistamines",
+"Corticosteroids",
+"Epinephrine for severe reactions"
+],
+"workout": [
+"Avoid exercise during reaction",
+"Rest until symptoms resolve",
+"Resume gradually",
+"Monitor for recurring symptoms"
+],
+"diet": [
+"Stay hydrated",
+"Eat bland foods if nauseous",
+"Avoid alcohol",
+"Nutritious diet to support recovery"
+]
+},
+"Peptic ulcer diseae": {
+"description": "Peptic ulcers are open sores that develop on the inside lining of your stomach and the upper portion of your small intestine. The most common symptom is stomach pain.",
+"precautions": [
+"Avoid NSAIDs",
+"Manage stress",
+"Don't smoke",
+"Limit alcohol"
+],
+"medications": [
+"Proton pump inhibitors",
+"Antibiotics (if H. pylori present)",
+"H2 blockers",
+"Cytoprotective agents"
+],
+"workout": [
+"Regular moderate exercise",
+"Avoid exercises that increase pressure",
+"Manage stress through activity",
+"Listen to your body"
+],
+"diet": [
+"Avoid spicy, acidic foods",
+"Eat smaller, frequent meals",
+"Avoid alcohol and caffeine",
+"Include probiotic foods"
+]
+},
+"AIDS": {
+"description": "AIDS (Acquired Immunodeficiency Syndrome) is a chronic, potentially life-threatening condition caused by HIV. It damages the immune system and interferes with the body's ability to fight infection.",
+"precautions": [
+"Take antiretroviral therapy consistently",
+"Practice safe sex",
+"Regular medical monitoring",
+"Avoid sharing needles"
+],
+"medications": [
+"Antiretroviral therapy (ART)",
+"Combination HIV medications",
+"Prophylactic antibiotics",
+"Treatment for opportunistic infections"
+],
+"workout": [
+"Regular exercise recommended",
+"Helps maintain immune function",
+"Moderate intensity activities",
+"Consult doctor about safe levels"
+],
+"diet": [
+"High-protein, high-calorie diet",
+"Food safety important",
+"Nutritious balanced meals",
+"Adequate hydration"
+]
+}
+}
